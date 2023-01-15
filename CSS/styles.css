@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500;700&display=swap');
+
+:root{
+
+
+    /* Primary */
+    --d-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    /* Neutral */
+    --vd-blue: hsl(212, 21%, 14%);
+    --d-g-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Font */
+    font-size: 14px;
+
+    --font-normal: 500;
+    --font-bold: 700;
+}
+
+button{
+    appearance: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (prefers-reduced-motion: no-preference)
+{
+    html{
+        scroll-behavior: smooth;
+    }
+}
+
+body{
+    background-color: var(--cream);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    margin-top: 8rem;
+    max-width: 24.5rem;
+    background-color: var(--white);
+    border-radius: 14px;
+}
+
+#perfume-mobile{
+    width: 100%;
+    height: 100%; 
+    border-top-left-radius: 14px;   
+    border-top-right-radius: 14px;
+}
+
+.content{
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 14px;
+}
+
+#product-type{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--d-g-blue);
+    margin: 0;
+    font-size: 12px;
+}
+
+#product-description{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--d-g-blue);
+    line-height: 1.8rem;
+    width: 21rem;
+}
+
+#product-name{
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: var(--font-bold);
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+    color: var(--vd-blue);
+}
+
+#prices{
+    display: flex;
+    flex-direction: row;
+}
+
+#product-old-price{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--d-g-blue);
+    text-align: center;
+    text-decoration: line-through;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding-top: 10px;
+}
+
+#product-price{
+    margin-top: 1rem;
+    font-family: 'Fraunces', serif;
+    color: var(--d-cyan);
+    font-size: 2rem;
+    font-weight: var(--font-bold);
+}
+
+#btn{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--d-cyan);
+    width: 100%;
+    height: 3.5rem;
+    color: var(--white);
+    border-radius: 8px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn svg{
+    margin-right: 12px;
+}
+
+#perfume-desktop{
+    display: none;
+}
+
+#btn:hover{
+    background-color: #1a4031;
+}
+
+.attribution { 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8px; 
+    text-align: center; 
+    position: relative;
+    bottom: 0;
+    margin: 30px 0;
+    width: 90%;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 1024px)
+{
+    #perfume-mobile{
+        display: none;
+    }
+
+    #perfume-desktop{
+        border-bottom-left-radius: 14px;
+        border-top-left-radius: 14px;
+        display: block;
+        width: 20rem;
+        height: auto; 
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content{
+        padding-top: 2rem;
+        padding-right: 2rem;
+        padding-left: 2.5rem;
+        max-width: 22rem;
+    }
+
+    #product-description{
+        width: 17rem;
+        margin-bottom: 0;
+    }
+
+    #product-name{
+        width: 14rem;
+    }
+    
+    .attribution { 
+        position: absolute;
+        font-size: 18px;
+    }
+
+}
+
