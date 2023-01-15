@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://l0rdix.github.io/Product-preview-card/](https://l0rdix.github.io/Product-preview-card/)
-- Live Site URL: [https://github.com/L0rdix/Product-preview-card](https://github.com/L0rdix/Product-preview-card)
+- Solution URL: [https://github.com/L0rdix/Product-preview-card](https://github.com/L0rdix/Product-preview-card)
+- Live Site URL: [https://l0rdix.github.io/Product-preview-card/](https://l0rdix.github.io/Product-preview-card/)
 
 ## My process
 
