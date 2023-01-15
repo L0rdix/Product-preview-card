@@ -40,10 +40,10 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 .container{
-    margin-top: 8rem;
     max-width: 24.5rem;
     background-color: var(--white);
     border-radius: 14px;
@@ -166,6 +166,7 @@ main{
     .container{
         display: flex;
         flex-direction: row;
+        max-width: 45rem;
     }
 
     .content{
